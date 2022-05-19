@@ -1,0 +1,137 @@
+
+#nav_container{
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.nav_img{
+    margin-right: 40px;
+}
+
+#logo_stan{
+    margin-left: 20px;
+    margin-top: 20px;
+    
+}
+
+.hr_title{
+    clear:both;
+    width: 100%;
+    display:block;
+margin-bottom: 0px;
+border: none;
+height: 5px;
+background-color: #333;
+
+
+}
+
+
+.titles{
+    margin-bottom: 2px;
+}
+
+/*End of heading / navigation */
+
+ #venom, #stan_spiderman{
+    max-height: 100%;
+}
+
+#entertainment_link, #comics_link, #biography_link {
+    text-decoration: none;
+    color: white;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+}
+
+#master-container{
+    background: url(/img/background.jpg);
+    background-repeat: repeat; 
+}
+
+.titles:hover{
+    color: rgb(255, 103, 103);
+}
+
+.active{
+    color: red;
+}
+
+#footer_container{
+    background-color: black;
+    padding-top: 10px;
+   
+}
+#newsletter{
+    color: white;
+}
+
+.input_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    width: 60%;
+    height: 6vh;
+    border-radius: 15px 15px 15px 15px;
+    background-color: black;
+    border-color: white;
+    font-size: large;
+    
+}
+
+input::placeholder{
+    text-align: center;
+    font-size: large;
+    color: white;
+}
+
+
+
+button{
+    width: 60.5%;
+    height: 7vh;
+    border-radius: 15px 15px 15px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+
+
+form{
+    margin-top: 30px;
+}
+
+#newsletter{
+    text-align: center;
+}
+
+#logo-container-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#logo-black{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* #stan-lee-marvel{
+    height: 50vh;
+} */
+
+#biography_container2{
+    margin-bottom: 10px;
+}
