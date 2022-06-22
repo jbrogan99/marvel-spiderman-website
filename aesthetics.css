@@ -1,9 +1,71 @@
 
 #nav_container{
-    background-color: black;
+    background-color: rgb(63, 63, 63);
     padding-top: 10px;
     padding-bottom: 10px;
     
+}
+
+#title_container {
+    /* display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%; */
+   background-color: rgb(63, 63, 63);
+   
+  }
+.dropbtn {
+    background-color: #3f3f3f;
+ 
+    border: none;
+    cursor: pointer;
+    margin-top:0;
+   
+    height: 100%;
+    /* padding-bottom: 10px; */
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+   
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  #spiderman:hover{
+    background-color: #272727;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color:  #272727;
+    width: 100%;
+    border-radius: 0;
+    margin-top:0;
+  }
+
+#comics-nav-bar{
+    cursor: pointer;
 }
 
 .nav_img{
@@ -21,16 +83,33 @@
     width: 100%;
     display:block;
 margin-bottom: 0px;
+margin-top: 0px;
 border: none;
 height: 5px;
-background-color: #333;
+background-color: #c50000
 
 
 }
 
+#spiderman{
+    color: white;
+}
+.comics {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+.characterGroup{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 1.1vw;
+    color: white;
+}
 .titles{
-    margin-bottom: 2px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    padding: 16px;
+    font-weight: 500;
 }
 
 /*End of heading / navigation */
@@ -53,14 +132,11 @@ a:visited{
     color: black;
 }
 
-#master-container{
+/* #master-container{
     background: url(/img/background.jpg);
     background-repeat: repeat; 
-}
+} */
 
-.titles:hover{
-    color: rgb(255, 103, 103);
-}
 
 .active{
     color: red;
@@ -128,10 +204,213 @@ form{
     margin-bottom: 20px;
 }
 
-/* #stan-lee-marvel{
-    height: 50vh;
-} */
+/*SPIDER-MAN PAGE LAYOUT */
 
-#biography_container2{
-    margin-bottom: 10px;
+#spidermanContainer{
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+    column-gap: 15%;
+    row-gap: 120px;
+    padding-top: 5vh;
+    justify-content: space-around;
+    margin-right: 8%;
+    margin-left: 8%;
 }
+
+.border-container{
+    transition-duration: 2s ease;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 10%;
+    text-align: center;
+}
+
+.innerContainers{
+    display: flex;
+    flex-direction: column-reverse;
+    border: 3px solid #c50000;
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+.spidermanImages{
+    
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: 0.6s ease;
+    
+}
+
+.view-comics{
+   z-index: 1;
+
+
+
+}
+
+.viewComicsTextClass{
+    position: absolute;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    width: 6vw;
+      
+        
+      
+}
+
+#viewComicsText5, #viewComicsText6, #viewComicsText8, #viewComicsText12 {
+    display: none;
+}
+
+
+
+a.viewComicsTextClass {
+    transition-duration: 1s ease;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px 10px;
+    background-color: #c50000;
+    color: white;
+    font-size: 16px;
+    
+    /* display: block; */
+   
+   
+}
+
+
+.innerContainers:hover .spidermanImages {
+    opacity: 0.3;
+  }
+
+
+  .innerContainers:hover .viewComicsTextClass {
+    opacity: 1;
+  }
+
+
+  .innerContainers:hover #img5,#img6,#img8,#img12 {
+    opacity: 1;
+  }
+  
+  
+
+  
+#characterContainer{
+    background-color: #f6f6f6;
+}
+
+#spidermanTitle{
+    color: rgb(0, 0, 0);
+    margin: 0px;
+    font-size: 30px;
+  
+}
+
+
+
+
+
+
+  /* comics page */ 
+ 
+
+#allComicsContainer{
+    position: relative;
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+    background-color: #f6f6f6;
+    z-index: -2;
+    
+}
+
+.img-con{
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+}
+.comicImg{
+    box-shadow: 10px 10px 5px #ccc;
+   
+}
+  /* Individual container */
+  .comicContainers{
+      width: 100%;
+    display: grid;
+    grid-template-columns: 350px auto;
+    grid-template-rows: 20px minmax(10px, auto);
+
+    margin-left: 15%;
+    margin-right: 15%;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 10px 10px #ccc;
+    background-color: white;
+
+}
+
+
+
+#allComicsContainer::after{
+    content: "";
+    display: block;
+    position: absolute;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  height: 50%;
+  opacity: 0.8;
+  background-repeat:no-repeat;
+  background-position: 50% 0;
+  background-size: 100%;
+  z-index: -1;
+    background-image: url(./img/comicsPage/looking-at-camera.jpeg);
+  
+}
+
+
+#container1{
+    margin-top: 50px;
+}
+
+.comicDescriptionClass{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-se ;
+}
+
+
+.heading-con{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.headingElement{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-se;
+}
+
+.description-con{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    /* display: flex;
+    align-items: center; */
+    margin-top: 40px;
+    font-size: 18px;
+    width: 60%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.img-con{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+
+/* #container3, #container5,#container6,#container7,#container8,#container9,#container10, #container11, #container12 {
+    display: none;
+}  */

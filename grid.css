@@ -2,10 +2,24 @@
 
 #title_container {
     display: flex;
-    justify-content: space-between;
-    margin-left: 40px;
-    margin-right: 40px;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+   
+   
   }
+
+  ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  #comics-nav-bar{
+    align-self: center;
+  font-size: 19px;
+  font-weight: bold;
+}
   
   #nav_container {
     display: flex;
@@ -15,271 +29,95 @@
   /*End of heading / navigation */
   
   /*section one */
+
+  .drop-down-comics{
+    display: none;
+  }
+
   
-  #section_one_container_home {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: minmax(50px, auto) 400px;
-    gap: 10px;
-  }
-  .home_top_three_images {
-    margin-top: 8px;
-  }
-  #captain_america {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    margin-top: 10px;
-  }
   
-  #spiderman {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    align-self: center;
-  }
-  
-  #marvel_bio {
-    grid-column: 3/4;
-    grid-row: 1/2;
-  }
-  
-  #stan_spiderman {
-    grid-column: 1/3;
-    grid-row: 2/3;
-  }
-  
-  #venom {
-    grid-column: 3/4;
-    grid-row: 2/3;
-    max-height: 100%;
-  }
-  
-  #marvel_container {
+  #ul{
     display: flex;
-    justify-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
-  
-  #captainamerica_container {
+
+  li{
+    list-style: none;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
   }
-  
-  #spiderman_container {
+
+  .characterGroup{
     display: flex;
-    justify-content: center;
+    flex-direction: column-reverse;
+   
   }
-  
-  #entertainment_link,
-  #biography_link {
-    position: absolute;
-    align-self: center;
-    width: 17%;
-    text-align: center;
-  }
-  
-  #comics_link {
-    position: absolute;
-    align-self: center;
-  }
-  
-  /*section 2 entertainment*/
-  
-  #entertainment_container,
-  #comics_container,
-  #biography_container {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-  }
-  
-  #entertainment_section_title,
-  #comics_section_title {
-    margin-right: 10px;
-  }
-  
-  #section-two_container {
+
+  #logo-quote-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 10px;
+    grid-template-columns: 25% auto;
+    grid-template-rows: 60% auto;
   }
-  
-  #stan_spiderman2 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    max-height: 100%;
-  }
-  
-  #captain_america2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    max-height: 100%;
-  }
-  
-  #section-two-phrases {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 20%;
-    margin-top: 20px;
-  }
-  
-  #pow {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    max-height: 100%;
-  }
-  
-  #view-all {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    max-height: 100%;
-  }
-  
-  #smash {
-    grid-column: 3/4;
-    grid-row: 1/2;
-    max-height: 100%;
-  }
-  
-  /* section-three Comics */
-  
-  #section-three-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    gap: 10px;
-  }
-  
-  #captain_comic {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    max-height: 100%;
-    height: 400px;
-  }
-  
-  #variant_comic {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    max-height: 100%;
-    height: 400px;
-  }
-  
-  #gaurdian_comic {
-    grid-column: 3/4;
-    grid-row: 1/2;
-    max-height: 100%;
-    height: 400px;
-  }
-  
-  #daredevil_comic {
-    grid-column: 4/5;
-    grid-row: 1/2;
-    max-height: 100%;
-    height: 400px;
-  }
-  
-  #section-three-phrases {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 20%;
-    margin-top: 20px;
-  }
-  
-  #oops {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    max-height: 100%;
-    height: auto;
-  }
-  
-  #boom {
-    grid-column: 3/4;
-    grid-row: 1/2;
-    max-height: 100%;
-  }
-  
-  #en-container {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 75% auto;
-    grid-template-rows: 50px auto 300px;
-  }
-  
-  #action_cpt_america {
+
+  #logo_stan{
     grid-column: 1/2;
     grid-row: 1/3;
-    max-height: 100%;
   }
-  
-  #name_cpt_america{
+
+  #quote{
     grid-column: 2/3;
     grid-row: 1/2;
-    max-height: 100%;
-   
+    display: flex;
+    align-items: center;
     margin-bottom: 0px;
-    margin-top: 0px;
-    
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 20px;
+
   }
-  
-  #fetch-cpt-america-text {
+
+  #stan_name{
     grid-column: 2/3;
     grid-row: 2/3;
-    max-height: 100%;
-    font-size: large;
     margin-top: 0px;
-    line-height: 40px;
+    display: flex;
+    justify-content: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 20px;
   }
   
-  #action_scene {
-    grid-column: 1/2;
-    grid-row: 3/4;
-    max-height: 100%;
-  }
-  
-  #spiderman_upsidedown {
-    grid-column: 2/3;
-    grid-row: 3/4;
-    max-height: 100%;
-  }
-  
-  #en-container2{
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: minmax(100px, 300px);
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
-  
-  #iron_man_walking{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    max-height: 100%;
-  }
-  
-  #fight_scene{
-    grid-column: 2/3;
-    grid-row: 1/2;
-    max-height: 100%;
-  }
-  #biography_container2{
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 30% auto;
-    grid-template-rows: minmax(100px, 300px);
-    margin-top: 10px;
-  }
-  
-  #awards{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    max-height: 100%;
-  }
-  
-  #producer{
-    grid-column: 2/3;
-    grid-row: 1/2;
-    max-height: 100%;
-  }
-  
+#spidermanTitle{
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#title-banner-container{
+  display: flex;
+  flex-direction: row-reverse;
+  /* width: 100%; */
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #ccc;
+}
+
+#spidermanTitleContainer{
+ 
+
+ display: flex;
+ justify-content: flex-end;
+}
+
+#spidermanTitle{
+  background-color: rgb(255, 255, 255);
+
+ padding: 40px;
+ position: relative;
+ left:50px;
+  width: 50%;
+  box-sizing: border-box;
+  text-decoration: overline;
+  text-decoration-color: #c50000;
+}
